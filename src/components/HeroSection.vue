@@ -32,12 +32,9 @@
         <div class="hero__background" :style="{ backgroundColor: slide.backgroundColor }">
           <div class="hero__circles">
             <picture>
-              <source
-                media="(max-width: 859px)"
-                srcset="/src/assets/banner-circles-small-mobile.svg"
-              />
-              <source media="(max-width: 1199px)" srcset="/src/assets/banner-circles-small.svg" />
-              <img src="/src/assets/banner-circles.svg" alt="Background circles" />
+              <source media="(max-width: 859px)" :srcset="bannerCirclesSmallMobile" />
+              <source media="(max-width: 1199px)" :srcset="bannerCirclesSmall" />
+              <img :src="bannerCircles" alt="Background circles" />
             </picture>
           </div>
           <div class="hero__illustration">
@@ -55,7 +52,7 @@
       aria-label="Prev slide"
     >
       <span class="hero__nav-icon">
-        <img src="/src/assets/arrow-left.svg" alt="" />
+        <img :src="arrowLeft" alt="" />
       </span>
     </button>
     <button
@@ -65,7 +62,7 @@
       aria-label="Next slide"
     >
       <span class="hero__nav-icon">
-        <img src="/src/assets/arrow-right.svg" alt="" />
+        <img :src="arrowRight" alt="" />
       </span>
     </button>
 
@@ -85,6 +82,20 @@ import 'swiper/css/navigation'
 import CallbackModal from './CallbackModal.vue'
 import ActionButton from './ui/ActionButton.vue'
 
+// Импорт изображений для корректной работы в продакшене
+import banner1 from '@/assets/banner-1.svg'
+import banner1Small from '@/assets/banner-1-small.svg'
+import banner1SmallMobile from '@/assets/banner-1-small-mobile.svg'
+import banner2 from '@/assets/banner-2.svg'
+import banner2Small from '@/assets/banner-2-small.svg'
+import banner3 from '@/assets/banner-3.svg'
+import banner3Small from '@/assets/banner-3-small.svg'
+import bannerCircles from '@/assets/banner-circles.svg'
+import bannerCirclesSmall from '@/assets/banner-circles-small.svg'
+import bannerCirclesSmallMobile from '@/assets/banner-circles-small-mobile.svg'
+import arrowLeft from '@/assets/arrow-left.svg'
+import arrowRight from '@/assets/arrow-right.svg'
+
 const modalRef = ref(null)
 
 const openModal = () => {
@@ -101,7 +112,9 @@ const baseSlides = [
       "Школа <span class='hero__color'>{</span><span class='hero__bold'>программирования</span><span class='hero__color'>}</span><br/>для тех, кому нужны<br/>реальные навыки,<br/>а не просто сертификат",
     subtitle: 'Закажите звонок, и наш специалист свяжется с вами в ближайшее время',
     buttonText: 'Заказать звонок',
-    backgroundImage: '/src/assets/banner-1.svg',
+    backgroundImage: banner1,
+    backgroundImageSmall: banner1Small,
+    backgroundImageSmallMobile: banner1SmallMobile,
     backgroundColor: '#eaf2f5',
   },
   {
@@ -110,7 +123,8 @@ const baseSlides = [
     subtitle:
       'Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.',
     buttonText: 'Заказать звонок',
-    backgroundImage: '/src/assets/banner-2.svg',
+    backgroundImage: banner2,
+    backgroundImageSmall: banner2Small,
     backgroundColor: '#eaf2f5',
   },
   {
@@ -119,7 +133,8 @@ const baseSlides = [
     subtitle:
       'Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.',
     buttonText: 'Заказать звонок',
-    backgroundImage: '/src/assets/banner-3.svg',
+    backgroundImage: banner3,
+    backgroundImageSmall: banner3Small,
     backgroundColor: '#eaf2f5',
   },
 ]
@@ -149,7 +164,7 @@ const slides = computed(() => {
     return [
       {
         ...baseSlides[0],
-        backgroundImage: '/src/assets/banner-1-small-mobile.svg',
+        backgroundImage: baseSlides[0].backgroundImageSmallMobile,
         subtitle: 'Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам',
         title:
           "Школа<br/><span class='hero__italic'>программирования</span><br/>для тех, кому нужны<br/>реальные навыки,<br/>а не просто сертификат",
@@ -159,7 +174,7 @@ const slides = computed(() => {
     // Для планшетов: все слайды с версиями -small
     return baseSlides.map((slide) => ({
       ...slide,
-      backgroundImage: slide.backgroundImage.replace('.svg', '-small.svg'),
+      backgroundImage: slide.backgroundImageSmall || slide.backgroundImage,
     }))
   } else {
     // Для десктопа: оригинальные слайды
