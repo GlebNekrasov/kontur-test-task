@@ -1,0 +1,31 @@
+@import './base.css';
+
+/* Global Styles */
+
+:root {
+  /* Colors - will be defined based on Figma design */
+  --color-primary: #000;
+  --color-secondary: #fff;
+  --color-accent: #000;
+  --color-text: #000;
+  --color-background: #fff;
+  --color-blue: #38bff2;
+  --color-orange: #f15525;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
