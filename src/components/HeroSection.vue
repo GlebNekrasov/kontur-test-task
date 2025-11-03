@@ -3,7 +3,7 @@
     <Swiper
       :modules="swiperModules"
       :autoplay="{
-        delay: 500000,
+        delay: 5000,
         disableOnInteraction: false,
       }"
       :pagination="{
@@ -148,15 +148,6 @@ const updateBreakpoints = () => {
   isMobile.value = window.matchMedia('(max-width: 859px)').matches
 }
 
-onMounted(() => {
-  updateBreakpoints()
-  window.addEventListener('resize', updateBreakpoints)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('resize', updateBreakpoints)
-})
-
 // Динамические слайды в зависимости от размера экрана
 const slides = computed(() => {
   if (isMobile.value) {
@@ -189,6 +180,15 @@ const navigationConfig = computed(() => {
   return slides.value.length > 1
     ? { prevEl: '.hero__nav--prev', nextEl: '.hero__nav--next' }
     : false
+})
+
+onMounted(() => {
+  updateBreakpoints()
+  window.addEventListener('resize', updateBreakpoints)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateBreakpoints)
 })
 </script>
 
@@ -411,7 +411,6 @@ const navigationConfig = computed(() => {
   transform: scale(1.2);
 }
 
-/* Tablet */
 @media (max-width: 1199px) {
   .hero__title {
     width: 485px;

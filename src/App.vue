@@ -2,6 +2,8 @@
 import AppHeader from './components/AppHeader.vue'
 import HeroSection from './components/HeroSection.vue'
 import CallbackModal from './components/CallbackModal.vue'
+import AdvantagesSection from './components/AdvantagesSection.vue'
+import InfoSection from './components/InfoSection.vue'
 </script>
 
 <template>
@@ -10,6 +12,8 @@ import CallbackModal from './components/CallbackModal.vue'
       <AppHeader />
       <main>
         <HeroSection />
+        <AdvantagesSection />
+        <InfoSection />
       </main>
     </div>
     <CallbackModal />

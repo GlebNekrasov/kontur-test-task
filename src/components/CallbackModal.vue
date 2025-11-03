@@ -116,7 +116,7 @@ defineExpose({ openModal })
   padding: 80px 53px 40px;
   width: 635px;
   max-width: 90vw;
-  max-height: 90vh;
+  max-height: 100vh;
   overflow-y: auto;
   position: relative;
 }
