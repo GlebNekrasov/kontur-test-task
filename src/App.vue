@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection.vue'
 import CallbackModal from './components/CallbackModal.vue'
 import AdvantagesSection from './components/AdvantagesSection.vue'
 import InfoSection from './components/InfoSection.vue'
+import GallerySection from './components/GallerySection.vue'
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import InfoSection from './components/InfoSection.vue'
         <HeroSection />
         <AdvantagesSection />
         <InfoSection />
+        <GallerySection />
       </main>
     </div>
     <CallbackModal />
