@@ -25,6 +25,22 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 npm install
 ```
 
+### Environment Variables
+
+После клонирования проекта необходимо настроить переменные окружения:
+
+1. Скопируйте файл `.env.example` в `.env`:
+   ```sh
+   cp .env.example .env
+   ```
+
+2. Откройте файл `.env` и вставьте валидный API ключ к JavaScript API Яндекс Карт:
+   ```
+   VITE_YANDEX_MAPS_API_KEY=your_yandex_maps_api_key_here
+   ```
+
+Получить API ключ можно на странице [JavaScript API и HTTP Геокодер](https://developer.tech.yandex.ru/services/) в кабинете разработчика Яндекс.
+
 ### Compile and Hot-Reload for Development
 
 ```sh

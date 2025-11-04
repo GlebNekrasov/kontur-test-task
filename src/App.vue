@@ -5,6 +5,7 @@ import CallbackModal from './components/CallbackModal.vue'
 import AdvantagesSection from './components/AdvantagesSection.vue'
 import InfoSection from './components/InfoSection.vue'
 import GallerySection from './components/GallerySection.vue'
+import MapSection from './components/MapSection.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import GallerySection from './components/GallerySection.vue'
         <AdvantagesSection />
         <InfoSection />
         <GallerySection />
+        <MapSection />
       </main>
     </div>
     <CallbackModal />
