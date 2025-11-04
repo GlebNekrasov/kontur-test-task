@@ -84,27 +84,16 @@ const toggleMobileMenu = () => {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.044;
-  display: flex;
-  gap: 1px;
-  align-self: flex-start;
   padding-top: 11px;
-  flex-shrink: 0;
+  color: #000000;
 }
 
 .header__logo-c {
   color: var(--color-blue);
 }
 
-.header__logo-o {
-  color: #000000;
-}
-
 .header__logo-d {
   color: var(--color-orange);
-}
-
-.header__logo-e {
-  color: #000000;
 }
 
 .header__nav {

@@ -1,8 +1,39 @@
+<template>
+  <section class="gallery">
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--large">
+        <a :href="gallery1" data-fancybox="gallery" data-caption="Gallery 1">
+          <img :src="gallery1" alt="Gallery 1" />
+        </a>
+      </div>
+      <div class="gallery__item">
+        <a :href="gallery2" data-fancybox="gallery" data-caption="Gallery 2">
+          <img :src="gallery2" alt="Gallery 2" />
+        </a>
+      </div>
+      <div class="gallery__item">
+        <a :href="gallery3" data-fancybox="gallery" data-caption="Gallery 3">
+          <img :src="gallery3" alt="Gallery 3" />
+        </a>
+      </div>
+      <div class="gallery__item">
+        <a :href="gallery4" data-fancybox="gallery" data-caption="Gallery 4">
+          <img :src="gallery4" alt="Gallery 4" />
+        </a>
+      </div>
+      <div class="gallery__item">
+        <a :href="gallery5" data-fancybox="gallery" data-caption="Gallery 5">
+          <img :src="gallery5" alt="Gallery 5" />
+        </a>
+      </div>
+    </div>
+  </section>
+</template>
+
 <script setup>
 import { onMounted, onBeforeUnmount } from 'vue'
 import { Fancybox } from '@fancyapps/ui'
 import '@fancyapps/ui/dist/fancybox/fancybox.css'
-
 import gallery1 from '@/assets/photo-gallery-1.png'
 import gallery2 from '@/assets/photo-gallery-2.png'
 import gallery3 from '@/assets/photo-gallery-3.png'
@@ -45,38 +76,6 @@ onBeforeUnmount(() => {
   Fancybox.destroy()
 })
 </script>
-
-<template>
-  <section class="gallery">
-    <div class="gallery__grid">
-      <div class="gallery__item gallery__item--large">
-        <a :href="gallery1" data-fancybox="gallery" data-caption="Gallery 1">
-          <img :src="gallery1" alt="Gallery 1" />
-        </a>
-      </div>
-      <div class="gallery__item">
-        <a :href="gallery2" data-fancybox="gallery" data-caption="Gallery 2">
-          <img :src="gallery2" alt="Gallery 2" />
-        </a>
-      </div>
-      <div class="gallery__item">
-        <a :href="gallery3" data-fancybox="gallery" data-caption="Gallery 3">
-          <img :src="gallery3" alt="Gallery 3" />
-        </a>
-      </div>
-      <div class="gallery__item">
-        <a :href="gallery4" data-fancybox="gallery" data-caption="Gallery 4">
-          <img :src="gallery4" alt="Gallery 4" />
-        </a>
-      </div>
-      <div class="gallery__item">
-        <a :href="gallery5" data-fancybox="gallery" data-caption="Gallery 5">
-          <img :src="gallery5" alt="Gallery 5" />
-        </a>
-      </div>
-    </div>
-  </section>
-</template>
 
 <style scoped>
 .gallery {

@@ -25,7 +25,7 @@ function init() {
     // Инициализируем карту
     myMap.value = new ymaps.Map('map-container', {
       center: coordinates,
-      zoom: zoom.value, // Масштаб
+      zoom: zoom.value,
       controls: [], // Отключаем все управляющие элементы
     })
 

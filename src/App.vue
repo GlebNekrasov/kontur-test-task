@@ -1,13 +1,3 @@
-<script setup>
-import AppHeader from './components/AppHeader.vue'
-import HeroSection from './components/HeroSection.vue'
-import CallbackModal from './components/CallbackModal.vue'
-import AdvantagesSection from './components/AdvantagesSection.vue'
-import InfoSection from './components/InfoSection.vue'
-import GallerySection from './components/GallerySection.vue'
-import MapSection from './components/MapSection.vue'
-</script>
-
 <template>
   <div class="app">
     <div class="container">
@@ -18,11 +8,23 @@ import MapSection from './components/MapSection.vue'
         <InfoSection />
         <GallerySection />
         <MapSection />
+        <AppFooter />
       </main>
     </div>
     <CallbackModal />
   </div>
 </template>
+
+<script setup>
+import AppHeader from './components/AppHeader.vue'
+import HeroSection from './components/HeroSection.vue'
+import CallbackModal from './components/CallbackModal.vue'
+import AdvantagesSection from './components/AdvantagesSection.vue'
+import InfoSection from './components/InfoSection.vue'
+import GallerySection from './components/GallerySection.vue'
+import MapSection from './components/MapSection.vue'
+import AppFooter from './components/AppFooter.vue'
+</script>
 
 <style scoped>
 .app {
@@ -36,11 +38,8 @@ import MapSection from './components/MapSection.vue'
   margin: 0 auto;
   min-height: 100vh;
   padding-top: 24px;
+  padding-bottom: 26px;
 }
-
-/* main {
-  flex: 1;
-} */
 
 @media (max-width: 768px) {
   .container {
