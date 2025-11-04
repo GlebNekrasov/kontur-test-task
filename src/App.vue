@@ -29,7 +29,7 @@ import AppFooter from './components/AppFooter.vue'
 <style scoped>
 .app {
   min-height: 100vh;
-  background-color: #f9f8fd;
+  background-color: var(--color-background);
 }
 
 .container {

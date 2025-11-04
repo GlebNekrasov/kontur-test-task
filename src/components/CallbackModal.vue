@@ -135,12 +135,10 @@ defineExpose({ openModal })
 }
 
 .modal__title {
-  font-family: 'Gilroy', sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 46px;
-  color: #22253b;
   text-align: center;
 }
 
@@ -157,7 +155,6 @@ defineExpose({ openModal })
 }
 
 .form-group__label {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: normal;
@@ -166,7 +163,6 @@ defineExpose({ openModal })
 
 .form-group__input,
 .form-group__textarea {
-  font-family: 'Gilroy', sans-serif;
   padding: 0 30px;
   height: 75px;
   border: 1px solid #9f9f9f;
@@ -188,7 +184,6 @@ defineExpose({ openModal })
 }
 
 .modal__disclaimer {
-  font-family: 'Gilroy', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #9f9f9f;
@@ -245,7 +240,6 @@ defineExpose({ openModal })
 
   .form-group__input,
   .form-group__textarea {
-    font-family: 'Gilroy', sans-serif;
     padding: 0 15px;
     height: 45px;
     border-radius: 6px;
@@ -254,7 +248,6 @@ defineExpose({ openModal })
   }
 
   .modal__disclaimer {
-    font-family: 'Gilroy', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #9f9f9f;

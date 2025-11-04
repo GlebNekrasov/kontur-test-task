@@ -38,7 +38,6 @@ const handleClick = (event) => {
   background: var(--color-orange);
   color: white;
   border-radius: 82px;
-  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 96.688%;

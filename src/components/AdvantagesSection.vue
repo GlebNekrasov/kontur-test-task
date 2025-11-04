@@ -185,7 +185,6 @@ onUnmounted(() => {
   font-size: 46px;
   line-height: 46px;
   font-weight: 600;
-  color: #22253b;
 }
 
 .advantages__title span {
@@ -226,7 +225,6 @@ onUnmounted(() => {
   font-size: 16px;
   line-height: 18.5px;
   font-weight: 400;
-  color: #22253b;
   text-align: center;
 }
 
@@ -238,7 +236,6 @@ onUnmounted(() => {
   font-size: 13px;
   line-height: 15px;
   font-weight: 400;
-  color: #22253b;
   text-align: center;
 }
 

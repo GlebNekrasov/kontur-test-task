@@ -228,11 +228,9 @@ onUnmounted(() => {
 
 .hero__title {
   width: 638px;
-  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 46px;
   line-height: 100%;
-  color: #22253b;
 }
 
 .hero__divider {
@@ -243,11 +241,9 @@ onUnmounted(() => {
 
 .hero__subtitle {
   width: 365px;
-  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  color: #22253b;
 }
 
 .hero__slide {
@@ -365,7 +361,7 @@ onUnmounted(() => {
 }
 
 .hero__nav:focus-visible {
-  outline: 2px solid #22253b;
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
 

@@ -80,7 +80,6 @@ const toggleMobileMenu = () => {
 }
 
 .header__logo {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.044;
@@ -110,11 +109,9 @@ const toggleMobileMenu = () => {
 }
 
 .header__link {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 1.044;
-  color: #22253b;
   white-space: nowrap;
   transition: color var(--transition-fast);
 }
@@ -124,7 +121,6 @@ const toggleMobileMenu = () => {
 }
 
 .header__phone {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
@@ -223,11 +219,9 @@ const toggleMobileMenu = () => {
   flex-direction: column;
   justify-content: center;
   height: 40px;
-  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  color: #22253b;
   transition: color var(--transition-fast);
 }
 

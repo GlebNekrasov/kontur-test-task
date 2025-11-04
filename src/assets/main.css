@@ -4,11 +4,11 @@
 
 :root {
   /* Colors - will be defined based on Figma design */
-  --color-primary: #000;
+  --color-primary: #22253b;
   --color-secondary: #fff;
   --color-accent: #000;
   --color-text: #000;
-  --color-background: #fff;
+  --color-background: #f9f8fd;
   --color-blue: #38bff2;
   --color-orange: #f15525;
 

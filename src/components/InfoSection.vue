@@ -108,7 +108,6 @@ onUnmounted(() => {
   padding-right: 50px;
   border-radius: 40px;
   background: #eaf2f5;
-  color: #22253b;
 }
 
 .info__title {

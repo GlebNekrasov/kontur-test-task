@@ -79,7 +79,6 @@ import YoutubeIcon from '@/components/ui/YoutubeIcon.vue'
 }
 
 .footer__logo {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 36px;
   line-height: 1.044;
@@ -97,7 +96,6 @@ import YoutubeIcon from '@/components/ui/YoutubeIcon.vue'
 
 .footer__tagline {
   max-width: 151px;
-  font-family: 'Gilroy', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -110,7 +108,6 @@ import YoutubeIcon from '@/components/ui/YoutubeIcon.vue'
 }
 
 .footer__icon {
-  color: #22253b;
   transition: color var(--transition-fast);
   cursor: pointer;
 }
@@ -123,11 +120,9 @@ import YoutubeIcon from '@/components/ui/YoutubeIcon.vue'
   display: flex;
   flex-direction: column;
   gap: 25px;
-  font-family: 'Gilroy', sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 104.4%;
-  color: #22253b;
   padding-top: 4px;
   margin-right: 166px;
 }
@@ -144,7 +139,6 @@ import YoutubeIcon from '@/components/ui/YoutubeIcon.vue'
   display: flex;
   flex-direction: column;
   gap: 3px;
-  font-family: 'Gilroy', sans-serif;
 }
 
 .footer__phone {
@@ -160,7 +154,6 @@ import YoutubeIcon from '@/components/ui/YoutubeIcon.vue'
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
-  color: #22253b;
 }
 
 .footer__bottom {
@@ -168,7 +161,6 @@ import YoutubeIcon from '@/components/ui/YoutubeIcon.vue'
   flex-wrap: wrap;
   padding-top: 28px;
   border-top: 1px solid #d8d8d8;
-  font-family: 'Gilroy', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
